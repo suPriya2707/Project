@@ -1,6 +1,5 @@
 package com;
-
-public class MenuOP{
+public class MenuOP {
 	public static void printWelcome(String appName, String developerName) {
 		String companyDetails = String.format("*****************************************************\n"
 											+ "** Welcome to %s.com. \n"
@@ -11,19 +10,20 @@ public class MenuOP{
 							+ "• Search, add, or delete files in \"main\" folder.\n"
 							+ "\n**Please be careful to ensure the correct filename is provided for searching or deleting files.**\n";
 		System.out.println(companyDetails);
-
+		
 		System.out.println(appFunction);
 	}
 
 	public static void displayMenu() {
-		String menu = "****** Select any option number from below and press Enter ******\n\n"
+		String menu = "****** Select any option number from below and press Enter ******\n\n";
+		String menu1 = "\n\n****** Select any option number from below and press Enter ******\n\n"
 					+ "1) Retrieve all files inside \"main\" folder\n"
 					+ "2) Display menu for File operations\n"
 					+ "3) Exit program\n";
-		System.out.println(menu);
-
+		System.out.println(menu1);
+		
 	}
-
+	
 	public static void displayFileMenuOptions() {
 		String fileMenu = "****** Select any option number from below ******\n\n"
 				+ "1) Add a file to \"main\" folder\n"
@@ -31,10 +31,7 @@ public class MenuOP{
 				+ "3) Search for a file from \"main\" folder\n"
 				+ "4) Show Previous Menu\n"
 				+ "5) Exit program\n";
-
+		
 		System.out.println(fileMenu);
 	}
-
 }
-
-
